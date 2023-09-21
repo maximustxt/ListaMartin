@@ -1,0 +1,32 @@
+<br />
+<br />
+<h1>LISTA DE ALUMNOS</h1>
+<div class="DivColorTitulo"></div>
+
+<main>
+  <div class="ContainerCards">
+    <!------------Iteracion de Alumnos------------->
+    <ng-container *ngFor="let Alumno of Alumnos">
+      <div class="ContainerCardAlumno">
+        <p>{{ Alumno.nombre | titlecase }}</p>
+        <p>{{ Alumno.edad }} años</p>
+        <!-----------Condicional------------>
+        <h5
+          class="AlumnosCursando"
+          *ngIf="Alumno.cursando; else AlumnosNoCursando"
+        >
+          Cursando
+        </h5>
+        <ng-template #AlumnosNoCursando
+          ><h5 class="AlumnosNoCursando">Abandono</h5></ng-template
+        >
+        <!---------------------------------->
+        <img
+          [className]="Alumno.cursando ? 'ImagenAlumno' : 'ImagenAlumnoRendido'"
+          [src]="Alumno.imagen"
+        />
+      </div>
+      <hr />
+    </ng-container>
+  </div>
+</main>

@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ContainerCardAlumno {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  align-items: center;
+}
+
+.ImagenAlumno {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 80px;
+  height: 80px;
+}
+
+.ImagenAlumnoRendido {
+  opacity: 0.3;
+  border-radius: 50%;
+  border: 1px solid rgb(143, 12, 12);
+  width: 80px;
+  height: 80px;
+}
+
+.ContainerCards {
+  padding: 20px 20px;
+}
+
+.ContainerCards {
+  width: 80%;
+  -webkit-box-shadow: 1px 7px 62px -18px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 7px 62px -18px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 7px 62px -18px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.AlumnosCursando {
+  background-color: rgb(30, 187, 69);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.AlumnosNoCursando {
+  background-color: rgb(255, 127, 127);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.DivColorTitulo {
+  background-color: aqua;
+  height: 2px;
+  width: 100%;
+}
